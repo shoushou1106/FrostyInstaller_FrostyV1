@@ -1,0 +1,14 @@
+﻿<ctrl:FrostyWindow x:Class="FrostyStandaloneInstaller.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:loc="clr-namespace:FrostyStandaloneInstaller.Localization"
+        xmlns:local="clr-namespace:FrostyStandaloneInstaller"
+        xmlns:ctrl="clr-namespace:Frosty.Controls;assembly=FrostyControls"
+        mc:Ignorable="d"
+        Title="{x:Static loc:Loc.App_Name}" Height="450" Width="600">
+    <Grid>
+        <Frame Source="../Pages/MenuPage.xaml" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</ctrl:FrostyWindow>

@@ -1,0 +1,28 @@
+﻿<Page x:Class="FrostyStandaloneInstaller.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FrostyStandaloneInstaller.Pages"
+      xmlns:loc="clr-namespace:FrostyStandaloneInstaller.Localization"
+      mc:Ignorable="d" 
+      d:DesignHeight="375" d:DesignWidth="600"
+      Title="MenuPage">
+
+    <Grid>
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Horizontal" Margin="15">
+                <Button HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Width="70" Height="25" Name="MainMenu_Update" Click="MainMenu_Update_Click" Content="{x:Static loc:Loc.Update}" IsEnabled="False"/>
+                <Label Content="{x:Static loc:Loc.Menu_Update_desc}" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="15">
+                <Button HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Width="70" Height="25" Name="MainMenu_Uninstall" Click="MainMenu_Uninstall_Click" Content="{x:Static loc:Loc.Uninstall}"/>
+                <Label Content="{x:Static loc:Loc.Menu_Uninstall_desc}" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="15">
+                <Button HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" Width="70" Height="25" Name="MainMenu_Modify" Click="MainMenu_Modify_Click" Content="{x:Static loc:Loc.Modify}"/>
+                <Label Content="{x:Static loc:Loc.Menu_Modify_desc}" Margin="5"/>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>
